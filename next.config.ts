@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['www.artmajeur.com'],
+    domains: ['www.artmajeur.com', ''],
   },
   // Adicione outras configurações necessárias
 }
