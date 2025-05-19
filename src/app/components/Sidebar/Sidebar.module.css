@@ -1,0 +1,131 @@
+/* Estrutura principal da Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+  
+.sidebar.open {
+    right: 0;
+    animation: pulse 0.5s ease;
+}
+
+/* Header da Sidebar */
+.sidebarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #232637;
+    color: white;
+}
+
+/* Botão de fechar */
+.closeBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.closeBtn:hover {
+    transform: rotate(90deg) scale(1.1);
+    color: #8a2be2;
+}
+
+/* Conteúdo principal */
+.sidebarContent {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+
+/* Seções e itens */
+.sidebarSection {
+    margin-bottom: 0.5rem;
+}
+
+.sidebarDivider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 1rem 0;
+}
+
+/* Botões e links */
+.sidebarButton {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: white;
+    color: #232637;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    margin: 4px 0;
+}
+  
+.sidebarButton:hover {
+    background-color: #3b1361;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícones */
+.sidebarIcon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+  
+.sidebarButton:hover .sidebarIcon {
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Seção de logout */
+.sidebarSectionLogout {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+}
+  
+.sidebarButtonLogout {
+    background-color: #ff4444;
+    color: white;
+    justify-content: center;
+}
+  
+.sidebarButtonLogout:hover {
+    background-color: #cc0000 !important;
+    transform: translateY(-3px);
+}
+
+/* Animação de pulsação */
+@keyframes pulse {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80%;
+        right: -80%;
+    }
+}

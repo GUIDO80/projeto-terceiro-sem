@@ -1,0 +1,19 @@
+.footerPages {
+    background-color: rgba(35, 38, 55, 0.8);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    backdrop-filter: blur(5px);
+    border-top: none;
+    margin-top: auto;
+  }
+  
+  .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footerPages p {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+  }

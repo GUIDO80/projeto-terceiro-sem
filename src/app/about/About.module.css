@@ -1,0 +1,170 @@
+.aboutUs {
+    margin-top: 50px;
+    padding: 5rem 2rem;
+    background-color: white;
+    margin-top: 80px; /* Compensa o header fixo */
+    background-color: white;
+}
+  
+.aboutUsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.aboutUsTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #232637;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+  
+.aboutUsContent {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+  
+.aboutUsImage {
+    flex: 1;
+}
+  
+.aboutUsImg {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+  
+.aboutUsText {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+  
+.aboutUsText p {
+    margin-bottom: 1.5rem;
+}
+  
+.aboutUsList {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+  
+.aboutUsList li {
+    margin-bottom: 0.8rem;
+}
+
+/* Estilos da Seção Descontraída */
+.funGallery {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.funGalleryContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.funGalleryTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #232637;
+  margin-bottom: 10px;
+}
+
+.funGallerySubtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.funGalleryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.funCard {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.funCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.funCardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.funCardContent {
+  padding: 20px;
+  text-align: center;
+}
+
+.funCardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #232637;
+  margin-bottom: 10px;
+}
+
+.funCardDescription {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsividade para a galeria */
+@media (max-width: 1024px) {
+  .funGalleryGrid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .funGalleryGrid {
+      grid-template-columns: 1fr;
+  }
+  
+  .funGallery {
+      padding: 40px 15px;
+  }
+  
+  .funGalleryTitle {
+      font-size: 1.8rem;
+  }
+}
+  
+/* Responsividade */
+@media (max-width: 768px) {
+  .aboutUsContent {
+    flex-direction: column;
+  }
+  
+  .aboutUsTitle {
+    font-size: 2rem;
+  }
+  
+  .aboutUs {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUsTitle {
+    font-size: 1.8rem;
+  }
+  
+  .aboutUsText {
+    font-size: 1rem;
+  }
+}
